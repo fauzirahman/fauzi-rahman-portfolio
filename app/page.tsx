@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
 import Experience from "@/components/experience";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -16,19 +17,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <Experience />
-
-        <section
-          id="contact"
-          className="mx-auto min-h-screen max-w-6xl px-6 py-32"
-        >
-          <p className="text-sm uppercase tracking-[0.25em] text-muted">
-            Contact
-          </p>
-
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Let&apos;s build something meaningful.
-          </h2>
-        </section>
+        <Contact />
       </main>
     </>
   );
