@@ -56,13 +56,30 @@ export default function Hero() {
             maintainability, and scalability.
           </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-10 flex flex-wrap gap-3">
             <a
               href="#projects"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
             >
               View Projects
               <ArrowUpRight className="h-4 w-4" />
+            </a>
+
+            <a
+              href="/Fauzi-Rahman-CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
+            >
+              View Resume
+            </a>
+
+            <a
+              href="/Fauzi-Rahman-CV.pdf"
+              download="Fauzi-Rahman-CV.pdf"
+              className="inline-flex items-center justify-center rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-surface"
+            >
+              Download Resume
             </a>
 
             <a
