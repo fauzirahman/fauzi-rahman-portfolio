@@ -1,5 +1,7 @@
+import About from "@/components/about";
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
@@ -8,37 +10,8 @@ export default function Home() {
 
       <main>
         <Hero />
-
-        <section
-          id="about"
-          className="mx-auto min-h-screen max-w-6xl px-6 py-32"
-        >
-          <p className="text-sm uppercase tracking-[0.25em] text-muted">
-            About
-          </p>
-
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Engineering with a focus on reliable systems.
-          </h2>
-
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
-            I specialize in backend development, enterprise integration,
-            APIs, databases, and cloud-based applications.
-          </p>
-        </section>
-
-        <section
-          id="skills"
-          className="mx-auto min-h-screen max-w-6xl px-6 py-32"
-        >
-          <p className="text-sm uppercase tracking-[0.25em] text-muted">
-            Skills
-          </p>
-
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-            Technical expertise
-          </h2>
-        </section>
+        <About />
+        <Skills />
 
         <section
           id="projects"
