@@ -28,6 +28,10 @@ export const metadata: Metadata = {
   description:
     "Professional portfolio of Fauzi Rahman — Software Engineer specializing in backend systems, ERP integration, cloud applications, and enterprise APIs.",
 
+  alternates: {
+    canonical: "/",
+  },
+
   keywords: [
     "Fauzi Rahman",
     "Software Engineer",
