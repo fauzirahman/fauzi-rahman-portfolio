@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import {
   ArrowDown,
   ArrowUpRight,
@@ -161,7 +162,7 @@ function ArchitectureItem({
   label,
   value,
 }: {
-  icon: React.ReactNode;
+  icon: ReactNode;
   label: string;
   value: string;
 }) {
