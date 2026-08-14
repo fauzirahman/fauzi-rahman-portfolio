@@ -13,30 +13,61 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Fauzi Rahman | Software Engineer",
+  title: {
+    default: "Fauzi Rahman | Software Engineer",
+    template: "%s | Fauzi Rahman",
+  },
+
   description:
     "Professional portfolio of Fauzi Rahman — Software Engineer specializing in backend systems, ERP integration, cloud applications, and enterprise APIs.",
+
   keywords: [
     "Fauzi Rahman",
     "Software Engineer",
     "Backend Engineer",
     "Full-Stack Engineer",
+    "Integration Engineer",
     "ERP Integration",
     "Oracle Fusion",
     "NestJS",
     "Next.js",
     "Cloud Engineer",
   ],
-  authors: [{ name: "Fauzi Rahman" }],
+
+  authors: [
+    {
+      name: "Fauzi Rahman",
+    },
+  ],
+
+  creator: "Fauzi Rahman",
+
+  openGraph: {
+    title: "Fauzi Rahman | Software Engineer",
+    description:
+      "Software Engineer specializing in backend systems, ERP integration, cloud applications, and enterprise APIs.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Fauzi Rahman Portfolio",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: LayoutProps<"/">) {
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+      </body>
     </html>
   );
 }
