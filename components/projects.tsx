@@ -86,7 +86,7 @@ export default function Projects() {
               {/* Platform Links */}
               <div className="flex shrink-0 flex-wrap gap-3">
                 <a
-                  href="https://oracle-fusion-integration-platform-production-755e.up.railway.app/api"
+                  href="https://oracle-fusion-integration-platform.vercel.app/api"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
