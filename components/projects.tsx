@@ -165,38 +165,68 @@ export default function Projects() {
                 </a>
               </div>
             </div>
+          </div>
 
-            {/* Dashboard Resources */}
-            <div className="mt-6 flex flex-wrap gap-3">
-              <a
-                href="https://oracle-fusion-integration-dashboard.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-surface-hover"
-              >
-                Dashboard
-                <ArrowUpRight className="h-4 w-4" />
-              </a>
+          {/* Financial Payment Integration API */}
+          <div className="border-b border-border p-6 sm:p-8">
+            <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+              <div className="flex gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-border">
+                  <Server className="h-5 w-5 text-muted" />
+                </div>
 
-              <a
-                href="https://oracle-fusion-integration-platform-production-755e.up.railway.app/api"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-surface-hover"
-              >
-                Backend API
-                <ArrowUpRight className="h-4 w-4" />
-              </a>
+                <div className="max-w-3xl">
+                  <p className="text-sm text-muted">Backend API · Go</p>
 
-              <a
-                href="https://github.com/fauzirahman/oracle-fusion-integration-dashboard"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-surface-hover"
-              >
-                Frontend GitHub
-                <ArrowUpRight className="h-4 w-4" />
-              </a>
+                  <h3 className="mt-1 text-xl font-semibold">
+                    Financial Payment Integration API
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-6 text-muted">
+                    Go and PostgreSQL backend with layered architecture.
+                    Implements payment lifecycle management, Idempotency Key,
+                    HMAC-SHA256 webhook verification, duplicate-event
+                    protection, double-entry ledger with atomic database
+                    transactions, Customer and Account APIs, retry mechanisms,
+                    automated testing, and Swagger/OpenAPI 3.0 documentation.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex shrink-0 flex-wrap gap-3">
+                <a
+                  href="https://financial-payment-integration-api.vercel.app/swagger/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-sm font-medium text-background transition-transform hover:-translate-y-0.5"
+                >
+                  Live API
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+
+                <a
+                  href="https://github.com/fauzirahman/financial-payment-integration-api"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-surface-hover"
+                >
+                  GitHub
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-2">
+              {["Go", "PostgreSQL", "REST API", "Swagger", "OpenAPI 3.0"].map(
+                (technology) => (
+                  <span
+                    key={technology}
+                    className="rounded-full border border-border px-3 py-1.5 text-xs text-muted"
+                  >
+                    {technology}
+                  </span>
+                ),
+              )}
             </div>
           </div>
 
@@ -259,6 +289,8 @@ export default function Projects() {
             </div>
           </div>
         </div>
+
+        
       </div>
     </section>
   );
